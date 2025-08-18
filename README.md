@@ -52,9 +52,9 @@ Frontend (.env)
 
 VITE_API_URL=http://127.0.0.1:8000/api
 ☁️ Deployment
-Backend → Render
 
-Frontend → Vercel
+Frontend & Backend → Render
+
 
 Make sure to set environment variables in both platforms.
 
