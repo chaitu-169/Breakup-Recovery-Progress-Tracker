@@ -68,8 +68,4 @@ Deployment: Render (API) + Vercel (UI)
 📌 License
 MIT License – free to use and modify.
 
----
-
-⚡ Now you have both `.gitignore` and `README.md` in one place, won’t get merged by Git.  
-
-Do you want me to also prepare a **requirements.txt (final)** with only the essentials for Render (s
+Contact - sriramchaitu383@gmail.com
