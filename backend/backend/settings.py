@@ -17,8 +17,12 @@ environ.Env.read_env()  # reads from .env file or Render’s environment
 SECRET_KEY = env("SECRET_KEY", default="insecure-secret-key")  # fallback only for dev
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["*"]   # in production, set to ["your-backend.onrender.com"]
-
+ALLOWED_HOSTS = [
+    "breakup-recovery-progress-tracker.onrender.com",
+    "breakup-recovery-progress-tracker-1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 # -------------------------
 # Installed apps
 # -------------------------
@@ -78,6 +82,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     "default": dj_database_url.config(
         default=env("DATABASE_URL", default="postgres://postgres:Sriram@localhost:5432/breakup_tracker")
+        ssl_require=True
     )
 }
 
@@ -123,7 +128,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://your-frontend.vercel.app",   # ✅ update with actual Vercel domain
+    "https://breakup-recovery-progress-tracker-1.onrender.com",   
 ]
 CORS_ALLOW_CREDENTIALS = True
 
