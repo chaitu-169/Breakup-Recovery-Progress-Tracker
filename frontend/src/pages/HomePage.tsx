@@ -86,13 +86,6 @@ export const HomePage: React.FC<HomePageProps> = ({ user, recoveryPercentage, on
                       <span>Create Account</span>
                     </button>
                   )}
-                  <Link
-                    to="/logs"
-                    className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all inline-flex items-center justify-center space-x-2"
-                  >
-                    <span>Try as Guest</span>
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
                 </div>
               </div>
             )}

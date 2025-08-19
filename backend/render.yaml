@@ -7,6 +7,15 @@ services:
     releaseCommand: |
       python manage.py migrate
       python manage.py createsuperuser --noinput --username admin --email admin@example.com || true
+  - type: static
+    name: breakup-frontend
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    redirects:
+      - source: /*
+        destination: /index.html
+        type: rewrite
 
     envVars:
       - key: PYTHON_VERSION
@@ -27,3 +36,4 @@ services:
 databases:
   - name: breakup-tracker-db
     plan: free
+

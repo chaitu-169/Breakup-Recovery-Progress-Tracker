@@ -1,0 +1,10 @@
+services:
+- type: static
+    name: breakup-frontend
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    redirects:
+      - source: /*
+        destination: /index.html
+        type: rewrite
