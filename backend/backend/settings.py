@@ -131,7 +131,8 @@ CORS_ALLOW_CREDENTIALS = True
 # Security (Production)
 # -------------------------
 CSRF_TRUSTED_ORIGINS = [
-    "https://your-frontend.vercel.app",   # ✅ update with actual Vercel domain
+    "https://breakup-recovery-progress-tracker-1.onrender.com",
+    "https://breakup-recovery-progress-tracker.onrender.com",
 ]
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
