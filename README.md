@@ -1,7 +1,12 @@
-# Breakup Recovery Progress Tracker 💔➡️💪
+#    Breakup Recovery Progress Tracker 💔➡️💪
 
-A full-stack project to track emotional recovery progress after a breakup.  
+A Full-stack project to track emotional recovery progress after a breakup.  
 Built with **Django (backend)** + **React (frontend)**.
+
+---
+
+## ## Live DEMO - https://breakup-recovery-progress-tracker-1.onrender.com/
+![Preview Screenshot](./preview.png)
 
 ---
 
@@ -23,7 +28,7 @@ BREAKUP-RECOVERY-PROGRESS-TRACKER/
 cd backend
 python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
-venv\Scripts\activate      # (Windows)
+.venv\Scripts\activate      # (Windows)
 
 pip install -r requirements.txt
 2. Run locally
