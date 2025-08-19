@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # -------------------------
 DATABASES = {
     "default": dj_database_url.config(
-        default=env("DATABASE_URL", default="postgres://postgres:Sriram@localhost:5432/breakup_tracker")
+        default=env("DATABASE_URL", default="postgres://postgres:Sriram@localhost:5432/breakup_tracker"),
         ssl_require=True
     )
 }
